@@ -1,0 +1,160 @@
+.wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80rem;
+    background-color: #dee5ec;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.pill{
+    font-weight: bolder;
+    color: #dee2e6;
+    background-color: #0d77f0;
+    border: 0.15rem solid #0d77f0;
+    border-radius: 0.5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    width: 5rem;
+    height: 2rem;
+}
+
+.header{
+    background-color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/*FORMULARIO*/
+.form{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    max-width: 80rem;
+    background-color: #dee2e6;
+    padding-left: 5rem;
+    padding-right: 1rem;
+}
+
+.news-div{
+   padding-top: 1rem;
+    padding-bottom: 1rem;
+    flex-basis: 70%;
+}
+
+.form-label{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75 rem;
+    font-size: 1.17rem;;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+}
+
+.imput{
+    display: block;
+    width: 90%;
+    padding: 1rem 1rem;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0.15rem solid #c8c8fa;
+    border-radius: 0.5rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+    color: #495057;
+}
+
+.save{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3rem;
+}
+
+.news-save{
+    flex-basis: 70%;
+}
+
+.save-pill{
+    flex-basis: 30%;
+    padding: 5rem 3rem;
+}
+
+.date{
+    width: 50%;
+}
+
+.button{
+    margin-left: 0rem;
+    width: 5rem;
+    height: 2rem;
+}
+
+/*LISTADO DE NOTICIAS*/
+.news-ul{
+    list-style: none;
+    border-bottom: .1rem solid #0d6efd
+}
+
+.li-news{
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.article-news{
+    display: flex;
+}
+
+.imege-news{
+    flex-basis: 15%;
+    padding-right: 2.5rem;
+    width: 9.60rem;
+    height: 9.60rem;
+}
+
+.image{
+    border-radius: .3rem;
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+
+.content-news{
+    flex-basis: 70%;
+}
+
+.title-content-news{
+    color: #262729;
+    display: block;
+    font-size: 1.17rem;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    font-weight: bold;
+}
+
+.text-content-news{
+    display: block;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    font-size: 1rem
+}
+
+.div-date{
+    display: flex;
+    justify-content: space-between;
+}
+
+.date{
+    display: block;
+    margin-block-start: 1rem;
+    margin-block-end: .1rem;
+    font-size: 1rem
+}
+
+.buttons{
+    display: inline-flex;
+}
+

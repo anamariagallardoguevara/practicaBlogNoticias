@@ -1,0 +1,63 @@
+<div class="wrapper header">
+    <h1>Blog de Noticias</h1>
+</div>
+
+<div class="wrapper">
+    <div class="form"> 
+        <div class="news-div">
+            <label for="titulo" class="form-label">Escriba aquí el título de su noticia</label>
+            <input type="text" class="imput" placeholder="max 60 caracteres" id="titulo" [(ngModel)]="titulo">
+        </div>
+    
+        <div class="news-div">
+            <label for="imagen" class="form-label">Inserte el URL que contenga la imagen de la noticia</label>
+            <input type="text" maxlength="60" class="imput" placeholder="https://example.com/imagen/" id="imagen" [(ngModel)]="imagen" >
+        </div>
+        
+        <div class="news-div">
+            <label for="resumen" class="form-label">Reseñe su noticia</label>
+            <textarea maxlength="300" class="imput" placeholder="max 300 caracteres" id="resumen" [(ngModel)]="resumen"></textarea>
+        </div>
+        
+        <div class="save">
+            <div class="news-div news-save">
+                <label for="date-new" class="form-label">Fecha de publicación</label>
+                <input type="date" class="date imput" id="date-new" [(ngModel)]="fecha">
+            </div>   
+            <div class="save-pill">
+                <button class="pill button" (click)="save()">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="wrapper">
+    <ul class="news-ul">
+        <li class="li-news">
+            <article class="article-news">
+                <div class="imege-news">
+                    <img src= {{imagen}} class="image">
+                </div>
+                <div class="content-news">
+                    <h3 class="title-content-news">
+                        {{titulo}}
+                    </h3>
+                    <p class="text-content-news">
+                        {{resumen}}
+                    </p>
+                    <div class="div-date">
+                        <div class="date-content-news">
+                            <p class="date">{{fecha}}</p>
+                        </div>
+                        <div class="buttons">
+                            <button class="pill">Eliminar</button>
+                            <button class="pill">Editar</button>
+                        </div>
+                    </div>
+                </div>    
+            </article>
+        </li>
+    </ul>
+</div>
+
