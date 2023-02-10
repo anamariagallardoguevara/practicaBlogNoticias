@@ -11,7 +11,7 @@
     
         <div class="news-div">
             <label for="imagen" class="form-label">Inserte el URL que contenga la imagen de la noticia</label>
-            <input type="text" maxlength="60" class="imput" placeholder="https://example.com/imagen/" id="imagen" [(ngModel)]="imagen" >
+            <input type="text" class="imput" placeholder="https://example.com/imagen/" id="imagen" [(ngModel)]="imagen" >
         </div>
         
         <div class="news-div">
@@ -22,7 +22,7 @@
         <div class="save">
             <div class="news-div news-save">
                 <label for="date-new" class="form-label">Fecha de publicación</label>
-                <input type="date" class="date imput" id="date-new" [(ngModel)]="fecha">
+                <input type="text" class="date imput" id="date-new" placeholder="00 / 00 / 2023" [(ngModel)]="fecha">
             </div>   
             <div class="save-pill">
                 <button class="pill button" (click)="save()">Guardar</button>
@@ -33,27 +33,6 @@
 
 
 <div class="wrapper">
-    <ul class="news-ul">
-        <li class="li-news">
-            <article class="article-news">
-                <div class="imege-news">
-                    <img src= {{imagen}} class="image">
-                </div>
-                <div class="content-news">
-                    <h3 class="title-content-news">
-                        {{titulo}}
-                    </h3>
-                    <p class="text-content-news">
-                        {{resumen}}
-                    </p>
-                    <div class="div-date">
-                        <div class="date-content-news">
-                            <p class="date">{{fecha}}</p>
-                        </div>
-                    </div>
-                </div>    
-            </article>
-        </li>
-    </ul>
+    <ul [innerHTML]="newsList" class="news-ul"></ul>
 </div>
 

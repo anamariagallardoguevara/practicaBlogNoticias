@@ -16,7 +16,7 @@
     margin-left: 2rem;
     cursor: pointer;
     width: 5rem;
-    height: 2rem;
+    height: 3rem;
 }
 
 .header{
@@ -84,7 +84,7 @@
 }
 
 .date{
-    width: 50%;
+    width: 30%;
 }
 
 .button{
@@ -93,7 +93,7 @@
     height: 2rem;
 }
 
-/*LISTADO DE NOTICIAS*/
+/*LISTADO DE NOTICIAS
 .news-ul{
     list-style: none;
     border-bottom: .1rem solid #0d6efd
@@ -135,26 +135,10 @@
     font-weight: bold;
 }
 
-.text-content-news{
-    display: block;
-    margin-block-start: 1rem;
-    margin-block-end: 1rem;
-    font-size: 1rem
-}
-
-.div-date{
-    display: flex;
-    justify-content: space-between;
-}
-
 .date{
     display: block;
     margin-block-start: 1rem;
     margin-block-end: .1rem;
     font-size: 1rem
-}
-
-.buttons{
-    display: inline-flex;
-}
+}*/
 
